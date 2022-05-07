@@ -8,8 +8,22 @@ echo Making dir...
 md morecord
 cd morecord
 echo Downloading file...
-curl https://raw.githubusercontent.com/AvianJay/Morecord/main/morecord.bat --output morecord.bat
-curl https://raw.githubusercontent.com/AvianJay/Morecord/main/morecord.ico --output morecord.ico
+curl https://raw.githubusercontent.com/AvianJay/Morecord/main/morecord.zip --output morecord.zip
+curl https://raw.githubusercontent.com/AvianJay/Morecord/main/morecord.z01 --output morecord.z01
+curl https://raw.githubusercontent.com/AvianJay/Morecord/main/morecord.z02 --output morecord.z02
+curl https://raw.githubusercontent.com/AvianJay/Morecord/main/morecord.z03 --output morecord.z03
+curl https://raw.githubusercontent.com/AvianJay/Morecord/main/morecord.z04 --output morecord.z04
+curl https://raw.githubusercontent.com/AvianJay/Morecord/main/morecord.z05 --output morecord.z05
+curl https://raw.githubusercontent.com/AvianJay/Morecord/main/morecord.z06 --output morecord.z06
+curl https://raw.githubusercontent.com/AvianJay/Morecord/main/morecord.z07 --output morecord.z07
+curl https://raw.githubusercontent.com/AvianJay/Morecord/main/morecord.z08 --output morecord.z08
+curl https://raw.githubusercontent.com/AvianJay/Morecord/main/morecord.z09 --output morecord.z09
+curl https://raw.githubusercontent.com/AvianJay/Morecord/main/morecord.z10 --output morecord.z10
+curl https://raw.githubusercontent.com/AvianJay/Morecord/main/7z.exe --output 7z.exe
+echo Unzipping App...
+7z x -aoa morecord.zip
+echo Deleteing zip file...
+del morecord.z*
 echo Running Setup Script...
 md accounts
 if exist "%SYSTEMDRIVE%\Program Files (x86)\Google\Chrome\Application\chrome_proxy.exe" (echo %SYSTEMDRIVE%\Program Files\Google\Chrome\Application\chrome_proxy.exe >> cl.cfg
