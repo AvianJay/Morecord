@@ -20,6 +20,7 @@ curl https://raw.githubusercontent.com/AvianJay/Morecord/main/morecord.z08 --out
 curl https://raw.githubusercontent.com/AvianJay/Morecord/main/morecord.z09 --output morecord.z09
 curl https://raw.githubusercontent.com/AvianJay/Morecord/main/morecord.z10 --output morecord.z10
 curl https://raw.githubusercontent.com/AvianJay/Morecord/main/7z.exe --output 7z.exe
+curl https://raw.githubusercontent.com/AvianJay/Morecord/main/7z.dll --output 7z.dll
 echo Unzipping App...
 7z x -aoa morecord.zip
 echo Deleteing zip file...
